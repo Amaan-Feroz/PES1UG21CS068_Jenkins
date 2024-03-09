@@ -5,7 +5,7 @@ pipeline {
             steps {
                 sh 'echo "building"'
                 build 'PES1UG21CS068-1'
-                sh 'g++ main.cpp -o output'
+                sh 'g++ working.cpp -o output'
             }
         }
         stage('Test') { 
